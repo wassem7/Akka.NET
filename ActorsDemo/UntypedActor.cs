@@ -3,7 +3,7 @@ using Akka.Actor;
 
 namespace ActorsDemo
 {
-    public class PersonActor : UntypedActor
+    public class UntypedActor : Akka.Actor.UntypedActor
     {
         protected override void OnReceive(object message)
         {
@@ -12,5 +12,7 @@ namespace ActorsDemo
                 Console.WriteLine("Hello there");
             }
         }
+        
+        
     }
 }
