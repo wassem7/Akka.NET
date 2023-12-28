@@ -91,9 +91,16 @@
         <Reference Include="WindowsBase" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="FSM\Messages\TicketValidated.cs" />
-        <Compile Include="FSM\Messages\TurnstilePushed.cs" />
-        <Compile Include="FSM\TurnstileActor.cs" />
+        <Compile Include="FSMActor\BarrierLock.cs" />
+        <Compile Include="FSMActor\ITurnstileData.cs" />
+        <Compile Include="FSMActor\Locked.cs" />
+        <Compile Include="FSMActor\TurnstileData.cs" />
+        <Compile Include="FSMActor\TurnstileStateMachine.cs" />
+        <Compile Include="FSMActor\ITurnstileState.cs" />
+        <Compile Include="FSMActor\UnLocked.cs" />
+        <Compile Include="FSMwithReceiveActor\Messages\TicketValidated.cs" />
+        <Compile Include="FSMwithReceiveActor\Messages\TurnstilePushed.cs" />
+        <Compile Include="FSMwithReceiveActor\TurnstileActor.cs" />
         <Compile Include="UntypedActor.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>

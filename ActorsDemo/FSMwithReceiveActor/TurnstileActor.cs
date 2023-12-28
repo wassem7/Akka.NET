@@ -1,6 +1,7 @@
 ﻿using ActorsDemo.FSM.Messages;
+using ActorsDemo.FSMwithReceiveActor.Messages;
 
-namespace ActorsDemo.FSM
+namespace ActorsDemo.FSMwithReceiveActor
 {
     public class TurnstileActor : Akka.Actor.ReceiveActor
     {
